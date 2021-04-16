@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Augusta';
+  src: url('assets/fonts/augusta.woff2') format('woff2'),
+       url('assets/fonts/augusta.woff') format('woff'),
+       url('assets/fonts/augusta.ttf')  format('truetype');
+}
+
+html, body, #app, .wrapper {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  color: #FFF;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: url('assets/cursor.png'), auto;
+
+  .gameContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hotkeysContainer {
+    flex: 1;
+    background: #222;
+
+    position: relative;
+  }
+}

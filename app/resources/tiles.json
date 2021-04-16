@@ -1,0 +1,14 @@
+{
+  "swamp-grass": {
+    "type": "nature",
+    "x": 0,
+    "y": 0,
+    "walkable": true
+  },
+  "swamp-grass-addon-1": {
+    "type": "nature",
+    "x": 1,
+    "y": 0,
+    "walkable": false
+  }
+}

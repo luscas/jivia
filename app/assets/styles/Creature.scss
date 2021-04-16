@@ -1,0 +1,71 @@
+.character {
+  position: absolute;
+
+  .characterInfo {
+    color: green;
+    position: absolute;
+    top: -20px;
+    left: -28px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name {
+      font-size: 12px;
+      font-weight: bold;
+      text-shadow: 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+      margin-bottom: 2px;
+    }
+
+    .bar {
+      width: 40px;
+      height: 3px;
+      background: #000;
+      border: 1px solid #000;
+      margin-bottom: 1px;
+
+      span.percentage {
+        display: block;
+        height: 3px;
+        background: green;
+      }
+    }
+
+    &.status-low {
+      & {
+        color: gold;
+      }
+
+      .bar span.percentage {
+        background: gold;
+      }
+    }
+
+    &.status-very-low {
+      & {
+        color: red;
+      }
+
+      .bar span.percentage {
+        background: red;
+      }
+    }
+
+    &.status-critical {
+      & {
+        color: darkred;
+      }
+
+      .bar span.percentage {
+        background: darkred;
+      }
+    }
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}
